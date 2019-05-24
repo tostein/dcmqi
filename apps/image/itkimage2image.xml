@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+  <category>Informatics.Converters</category>
+  <title>Convert ITK image into DICOM Image</title>
+  <description>Convert the image using any of the formats supported by ITK, such as NRRD or NIFTI, into a DICOM Image Object for example CT.</description>
+  <version>1.0</version>
+  <documentation-url>https://github.com/QIICR/dcmqi</documentation-url>
+  <license></license>
+  <contributor>Andrey Fedorov(BWH), Christian Herz(BWH), Tobias Stein (DKFZ)</contributor>
+  <acknowledgements>This work is supported in part the National Institutes of Health, National Cancer Institute, Informatics Technology for Cancer Research (ITCR) program, grant Quantitative Image Informatics for Cancer Research (QIICR) (U24 CA180918, PIs Kikinis and Fedorov).</acknowledgements>
+
+  <parameters>
+    <label>Required input/output parameters</label>
+    <file>
+      <name>metaDataFileName</name>
+      <label>JSON metadata file</label>
+      <channel>input</channel>
+      <longflag>inputMetadata</longflag>
+      <description>JSON file containing the meta-information that describes the measurements to be encoded. See documentation for details.</description>
+    </file>
+
+    <file>
+      <name>outputImageFileName</name>
+      <label>Image file name</label>
+      <channel>output</channel>
+      <longflag>outputDICOM</longflag>
+      <description>File name of the DICOM object that will store the result of conversion.</description>
+    </file>
+
+
+    <file>
+      <name>imageFile</name>
+      <label>Segmentation file name</label>
+      <channel>input</channel>
+      <longflag>inputImage</longflag>
+      <description>File name of the image in a format readable by ITK (NRRD, NIfTI, MHD, etc.). See documentation for details.</description>
+    </file>
+  </parameters>
+
+</executable>
