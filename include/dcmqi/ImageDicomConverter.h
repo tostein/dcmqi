@@ -11,6 +11,8 @@
 #include "dcmqi/ConverterBase.h"
 #include "dcmqi/JSONSegmentationMetaInformationHandler.h"
 
+#include <dcmtk/dcmimage/dicoimg.h>
+
 using namespace std;
 
 namespace dcmqi {
