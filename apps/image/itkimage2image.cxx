@@ -48,13 +48,13 @@ int main(int argc, char *argv[])
 			return EXIT_FAILURE;
 		}
 		else {
-			DcmFileFormat segdocFF(result);
+			DcmFileFormat imagedocFF(result);
 			bool compress = false;
 			if (compress) {
-				CHECK_COND(segdocFF.saveFile(outputImageFileName.c_str(), EXS_DeflatedLittleEndianExplicit));
+				CHECK_COND(imagedocFF.saveFile(outputImageFileName.c_str(), EXS_DeflatedLittleEndianExplicit));
 			}
 			else {
-				CHECK_COND(segdocFF.saveFile(outputImageFileName.c_str(), EXS_LittleEndianExplicit));
+				CHECK_COND(imagedocFF.saveFile(outputImageFileName.c_str(), EXS_LittleEndianExplicit));
 			}
 
 			COUT << "Saved image as " << outputImageFileName << endl;

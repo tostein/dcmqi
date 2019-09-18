@@ -15,6 +15,7 @@ set(HDRS
   ${INCLUDE_DIR}/ParaMapConverter
   ${INCLUDE_DIR}/Helper.h
   ${INCLUDE_DIR}/JSONMetaInformationHandlerBase.h
+  ${INCLUDE_DIR}/JSONImageMetaInformationHandler.h
   ${INCLUDE_DIR}/JSONParametricMapMetaInformationHandler.h
   ${INCLUDE_DIR}/JSONSegmentationMetaInformationHandler.h
   ${INCLUDE_DIR}/SegmentAttributes.h
@@ -28,6 +29,7 @@ set(SRCS
   ParaMapConverter.cpp
   Helper.cpp
   JSONMetaInformationHandlerBase.cpp
+  JSONImageMetaInformationHandler.cpp
   JSONParametricMapMetaInformationHandler.cpp
   JSONSegmentationMetaInformationHandler.cpp
   SegmentAttributes.cpp
